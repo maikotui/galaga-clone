@@ -536,6 +536,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ffbe94e5afe57488f06a2ad261239c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyCharacterController: {fileID: 0}
+  divePath: {fileID: 0}
+  speed: 1000
+  turnDistance: 1
 --- !u!1 &354038740
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,8 +661,9 @@ GameObject:
   m_Component:
   - component: {fileID: 741389421}
   - component: {fileID: 741389422}
+  - component: {fileID: 741389423}
   m_Layer: 0
-  m_Name: Enemy Object
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -699,6 +704,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &741389423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741389420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700e02e2ae3fc24418ddd3a5ccba8361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2d: {fileID: 0}
 --- !u!1 &771014366
 GameObject:
   m_ObjectHideFlags: 0
